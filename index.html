@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda|Milgrau</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>
+            Agenda Milgrau
+        </h1>
+    </header>   
+    <div class="container">
+        <div class="cadastro">
+            <header>
+                <h2>
+                    Cadastro
+                </h2>
+            </header>
+            <form id="form">
+                <label for="nome" id="label-nome">Nome</label>
+                <input type="text" id="nome" placeholder="Nome" required>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="Telefone" required>
+                <label for="classificacao">Grupo (opcional)</label>
+                <select name="grupo" id="classificacao">
+                    <option value="" hidden disabled selected></option>
+                    <option value="Amigo" >Amigos</option>
+                    <option value="Trabalho">Trabalho</option>
+                    <option value="Familia">Familia</option>
+                    <option value="Urgencia">Urgencia</option>
+                    <option value="custom">Outro</option>
+                </select>
+                <div><button type="submit">Cadastrar</button></div>
+            </form>
+        </div>
+        <div class="lista">
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th id>Nome</th>
+                        <th>Telefone</th>
+                        <th>Grupo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Contatos Salvos</td>
+                        <td>----------------------</td>
+                        <td id="qntdd-contatos-salvos">0</td>
+                    </tr>   
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
