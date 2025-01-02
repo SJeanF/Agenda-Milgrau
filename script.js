@@ -4,8 +4,6 @@ const elementNome = document.getElementById('nome')
 const elementTel = document.getElementById('telefone')
 let qntddContatos = 0
 let linhas = ''
-let pessoas = []
-let telefones = []
 
 form.addEventListener('submit', function(e) {
     e.preventDefault()
